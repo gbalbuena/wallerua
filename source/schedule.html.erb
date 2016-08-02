@@ -13,92 +13,77 @@ title: Horarios
     <th>Profesor</th>
   </thead>
   <tbody>
+    <% csv_data('lunes_miercoles_viernes.csv').each do |row| %>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><%= row[:hora] %></td>
+      <td><%= row[:actividad] %></td>
+      <td><%= row[:espacio] %></td>
+      <td><%= row[:profesor] %></td>
     </tr>
+    <% end %>
   </tbody>
-
 </table>
 
 <pre>
-07:00 – 08:30	Natación Master	Piscina – Cubo 1	Mauricio
-07:30 – 08:15	Gimnasia tradicional	Estadio	Victor
-08:15 – 09:00	Básquet +25 (masc)	Estadio	Victor
-08:20 – 09:10	Natación	Piscina – Cubo 1	Deborah
-10:00 a 10:55	Tenis Adultos (pptes)	Canchas 1 y 2	Rodrigo
-11:00 – 12.00	Tenis (adultos – int)	Canchas 1 y 2	Rodrigo
-12:00 – 13:15	Básquet +15 (masc.Doma)	Estadio
-12:15 – 13:00	Gimnasia tradicional	Sala de musculación	Victor
-13:00 – 14:00	Tenis (principiantes)	Cancha 1	Delia
-13:15 – 14:30	Básquet +35 (masc.Doma)	Estadio
-13:30 – 15:00	Natación Master	Piscina – Cubo 3	Mauricio
-14:00 – 15:00	Tenis (intermedio)	Cancha 1	Delia
-19:00 – 20:00	Tenis (principiantes)	Cancha 5	Rodrigo
-19:00 – 20:00	Tenis (inter y avanz. adultos)	Canchas 1 y 2	Germán – Matias
-19:15 – 20:00	Volley (adol. 14 a 17 años int. y avan.)	CF4	Andrea
-19:15 – 20:15	Básquet +15 (masc.Doma)	Gimnasio C	Pablo – Leo
-19:20 – 20:20	Fútbol de 15 a 17 años (masculino)	Exte. 2	Fabián
-19:30 – 21:30	Grupo de running	Rambla	Jorge
-20:00 – 21:00	Tenis (principiantes)	Cancha 5	Germán
-20:00 – 21:00	Tenis (intermedio)	Canchas 3 y 4	Rodrigo – Matías
-20:00 – 21:30	Volley social mixto	CF4 – Gimnasio C	Claudio
-20:15 – 21:00	Natación	Piscina – Cubo 6-7	Pablo
-20:20 – 22:00	Fútbol de 18 a 24	Exte. 2	Fabián
-20:30 – 21:15	Natación (adultos princip)	Piscina Climatizada	Carmen
-21:00 – 22:00	Tenis (avanzado)	Canchas 3 y 4	Rodrigo – Matías
-06:30 – 22:30		Sala de musculación
-06:30 – 22:00		Piscina
+
 </pre>
 
 <h2>Martes y Jueves</h2>
-<pre>
- Hora Actividad Espacio Profesor
-07:30 – 08:15	Grupo de running	Rambla	Victor
-08:30 – 09:10	Natación	Piscina Cubo 1	Andrea
-10:00 – 10:55	Tenis (Principiantes)	Exte.1	Virginia
-10:30 – 12:00	Volley +20 Damas(avanzado)	CF4	Ana
-11:00 – 12:00	Tenis (Intermedio)	Canchas 1 y 2	Delia – Virginia
-11:00 – 12:30	Natación Master	Piscina	Mauricio
-13:00 – 14:00	Tenis (Principiantes)	Canchas 1 Y 2	Germán
-14:00 – 15:00	Tenis (Intermedio)	Canchas 1 y 2	Germán
-16:00 – 16:40	Natación (Principiantes)	Piscina Cubo 1	Marcelo
-16:40 – 17:15	Natación(Int y Avanz.)	Piscina Cubo 1	Marcelo
-17:45 – 18:15	Matronatación	Piscina Climatizada	Cindy
-19:00 – 20:00	Tenis (avanzados adultos)	Canchas 3 y 4	Ignacio – Germán
-19:00 – 20:00	Tenis (principiantes Adultos)	Cancha 5	Walter
-19:20 – 20:30	Fútbol de 15 a 20	Exte. 2	Camilo
-19:30 – 20:30	Básquet + 35 (doma)	Gimnasio B
-19:30 – 21:30	Grupo de running	Rambla	Omar
-20:00 – 21:00	Tenis (intermedio)	Cancha 5	Walter
-20:00 – 21:00	Tenis (Principiantes)	Canchas 1 y 2	Ignacio – Germán
-20:15 – 21:00	Natación	Piscina Cubo 1	Pablo
-20:30 – 22:00	Fútbol + 28	Exte. 2	Camilo
-20:30 – 22:00	Natación Master	Piscina Cubo 5	Mauricio
-21:00 – 22:00	Tenis (Avanzado)	Canchas 3 y 4	Walter
-06:30 – 22:30		Sala de musculación
-06:30 – 22:00		Piscina
-</pre>
+<table>
+  <thead>
+    <th>Hora</th>
+    <th>Actividad</th>
+    <th>Espacio</th>
+    <th>Profesor</th>
+  </thead>
+  <tbody>
+    <% csv_data('martes_jueves.csv').each do |row| %>
+    <tr>
+      <td><%= row[:hora] %></td>
+      <td><%= row[:actividad] %></td>
+      <td><%= row[:espacio] %></td>
+      <td><%= row[:profesor] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <h2>Sábado</h2>
-<pre>
- Hora  Actividad Espacio Profesor
-09:00 – 09:40	Tenis (principiantes)	exterior 1	Ignacio
-11:00 – 12:00	Tenis (Intermedio)	canchas 1 y 2	Ignacio
-11:00 – 11:30	Matronatación	Piscina Climatizada	Martin – Valeria
-12:00 – 13:00	Circo	Gimnasio C	Adriana – Virginia
-17:00 – 18:00	Tenis (intermedio adultos)	Cancha 5	Matias
-18:00 – 19:00	Tenis (Principiantes)	Cancha 5	Matias
-19:00 – 20:00	Tenis (Avanzado)	Cancha 5	Matias
-08:00 – 21:00		Sala de musculación
-08:00 – 21:00		Piscina
-</pre>
+<table>
+  <thead>
+    <th>Hora</th>
+    <th>Actividad</th>
+    <th>Espacio</th>
+    <th>Profesor</th>
+  </thead>
+  <tbody>
+    <% csv_data('sabado.csv').each do |row| %>
+    <tr>
+      <td><%= row[:hora] %></td>
+      <td><%= row[:actividad] %></td>
+      <td><%= row[:espacio] %></td>
+      <td><%= row[:profesor] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <h2>Domingo</h2>
-<pre>
- Hora Actividad Espacio Profesor
-09:00 – 20:00		Sala de musculación
-09:00 – 20:00		Piscina
-</pre>
+<table>
+  <thead>
+    <th>Hora</th>
+    <th>Actividad</th>
+    <th>Espacio</th>
+    <th>Profesor</th>
+  </thead>
+  <tbody>
+    <% csv_data('domingo.csv').each do |row| %>
+    <tr>
+      <td><%= row[:hora] %></td>
+      <td><%= row[:actividad] %></td>
+      <td><%= row[:espacio] %></td>
+      <td><%= row[:profesor] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

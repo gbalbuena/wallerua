@@ -2,6 +2,10 @@
 # Page options, layouts, aliases and proxies
 ###
 
+# Load/Activate CSV Helpers
+require 'lib/csv_helpers.rb'
+activate :csv_helpers
+
 # Per-page layout changes:
 #
 # With no layout

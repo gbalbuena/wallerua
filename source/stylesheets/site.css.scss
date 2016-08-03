@@ -1,18 +1,35 @@
 @charset "utf-8";
 
+body { 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer {
+    text-align: center;
+}
+
 .logo {
   max-width: 200px;
   max-height: 100%;
   margin: 0px auto;
-  display: block;
+  display: inline;
+}
+
+.banner .banner-title {
+    display: inline;
+    vertical-align: bottom;
+    color: #08f;
 }
 
 ul.menu {
     list-style-type: none;
-    margin: 0;
+    margin: 5px 0 0 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #08f;
+    border: 1px solid #ccc;
+    border-radius: 2px;
 }
 
 li.menu-item {
@@ -28,5 +45,5 @@ li.menu-item a {
 }
 
 li.menu-item a:hover {
-    background-color: #111111;
+    background-color: #07f;
 }

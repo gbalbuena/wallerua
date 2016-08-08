@@ -1,22 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-    <title><%= current_page.data.title || "Wallerua" %></title>
-    <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :site %>
-  </head>
-  <body class="<%= page_classes %>">
-      <div class="container">
-        <%= partial "header" %>
-        <%= partial "navigation" %>
-        <%= yield %>
-      </div>
-      <hr>
-      <footer>
-        Wallerua Sport Club 2016 &copy; Copyright
-      </footer>
-  </body>
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <title><%= current_page.data.title || "Wallerua" %></title>
+  <%= stylesheet_link_tag :site %>
+  <%= javascript_include_tag :site %>
+</head>
+<body>
+<%= partial "header" %>
+<%= partial "navigation" %>
+<%= yield %>
+<hr>
+<footer>Wallerua Sport Club 2016 &copy; Copyright</footer>
+</body>
 </html>

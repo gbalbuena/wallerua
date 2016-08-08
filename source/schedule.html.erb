@@ -2,84 +2,87 @@
 title: Horarios
 ---
 
-<h1>Horarios</h1>
+<section>
+  <h2>Horarios</h2>
+  <hr />
 
-<h2>Lunes, Miércoles y Viernes</h2>
-<table>
-  <thead>
-    <th>Hora</th>
-    <th>Actividad</th>
-    <th>Espacio</th>
-    <th>Profesor</th>
-  </thead>
-  <tbody>
-    <% csv_data('lunes_miercoles_viernes.csv').each do |row| %>
-    <tr>
-      <td><%= row[:hora] %></td>
-      <td><%= row[:actividad] %></td>
-      <td><%= row[:espacio] %></td>
-      <td><%= row[:profesor] %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <h3>Lunes, Miércoles y Viernes</h3>
+  <table border="1">
+    <thead>
+      <th>Hora</th>
+      <th>Actividad</th>
+      <th>Espacio</th>
+      <th>Profesor</th>
+    </thead>
+    <tbody>
+      <% csv_data('lunes_miercoles_viernes.csv').each do |row| %>
+      <tr>
+        <td><%= row[:hora] %></td>
+        <td><%= row[:actividad] %></td>
+        <td><%= row[:espacio] %></td>
+        <td><%= row[:profesor] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<h2>Martes y Jueves</h2>
-<table>
-  <thead>
-    <th>Hora</th>
-    <th>Actividad</th>
-    <th>Espacio</th>
-    <th>Profesor</th>
-  </thead>
-  <tbody>
-    <% csv_data('martes_jueves.csv').each do |row| %>
-    <tr>
-      <td><%= row[:hora] %></td>
-      <td><%= row[:actividad] %></td>
-      <td><%= row[:espacio] %></td>
-      <td><%= row[:profesor] %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <h3>Martes y Jueves</h3>
+  <table border="1">
+    <thead>
+      <th>Hora</th>
+      <th>Actividad</th>
+      <th>Espacio</th>
+      <th>Profesor</th>
+    </thead>
+    <tbody>
+      <% csv_data('martes_jueves.csv').each do |row| %>
+      <tr>
+        <td><%= row[:hora] %></td>
+        <td><%= row[:actividad] %></td>
+        <td><%= row[:espacio] %></td>
+        <td><%= row[:profesor] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<h2>Sábado</h2>
-<table>
-  <thead>
-    <th>Hora</th>
-    <th>Actividad</th>
-    <th>Espacio</th>
-    <th>Profesor</th>
-  </thead>
-  <tbody>
-    <% csv_data('sabado.csv').each do |row| %>
-    <tr>
-      <td><%= row[:hora] %></td>
-      <td><%= row[:actividad] %></td>
-      <td><%= row[:espacio] %></td>
-      <td><%= row[:profesor] %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <h3>Sábado</h3>
+  <table border="1">
+    <thead>
+      <th>Hora</th>
+      <th>Actividad</th>
+      <th>Espacio</th>
+      <th>Profesor</th>
+    </thead>
+    <tbody>
+      <% csv_data('sabado.csv').each do |row| %>
+      <tr>
+        <td><%= row[:hora] %></td>
+        <td><%= row[:actividad] %></td>
+        <td><%= row[:espacio] %></td>
+        <td><%= row[:profesor] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<h2>Domingo</h2>
-<table>
-  <thead>
-    <th>Hora</th>
-    <th>Actividad</th>
-    <th>Espacio</th>
-    <th>Profesor</th>
-  </thead>
-  <tbody>
-    <% csv_data('domingo.csv').each do |row| %>
-    <tr>
-      <td><%= row[:hora] %></td>
-      <td><%= row[:actividad] %></td>
-      <td><%= row[:espacio] %></td>
-      <td><%= row[:profesor] %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+  <h3>Domingo</h3>
+  <table border="1">
+    <thead>
+      <th>Hora</th>
+      <th>Actividad</th>
+      <th>Espacio</th>
+      <th>Profesor</th>
+    </thead>
+    <tbody>
+      <% csv_data('domingo.csv').each do |row| %>
+      <tr>
+        <td><%= row[:hora] %></td>
+        <td><%= row[:actividad] %></td>
+        <td><%= row[:espacio] %></td>
+        <td><%= row[:profesor] %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

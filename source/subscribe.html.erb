@@ -2,14 +2,48 @@
 title: Formulario de Contacto
 ---
 <h2>Subscribirse</h2>
-<form action="#" method="get">
-  <label for="user_email">Email <b>*</b></label>
-  <br />
-  <input type="email" id="user_email" placeholder="i.e: peter@example.com" required>
-  <br />
-  <label for="user_comment">Comentario</label>
-  <br />
-  <textarea rows="3"></textarea>
-  <br />
+<form action="#" method="get" autocomplete="off">
+  <fieldset>
+    <legend>Datos Personales</legend>
+    <label for="user_email">Email <strong>*</strong></label>
+    <br />
+    <input type="email" id="user_email" placeholder="i.e: peter@example.com" required />
+    <br />
+    <label for="country">País</label>
+    <br />
+    <select name="country" id="country">
+      <optgroup label="América Sur">
+        <option value="uy">Uruguay</option>
+        <option value="ar">Argentina</option>
+        <option value="br">Brasil</option>
+      </optgroup>
+      <optgroup label="América Norte">
+        <option value="mx">Mexico</option>
+        <option value="us">Estados Unidos</option>
+        <option value="ca">Canadá</option>
+      </optgroup>
+    </select>
+    <br />
+    <input type="radio" name="m-or-f" id="male" checked />
+    <label for="male">Hombre</label>
+    <input type="radio" name="m-or-f" id="female" />
+    <label for="female">Mujer</label>
+    <br />
+  </fieldset>
+  <fieldset>
+    <legend>Feedback</legend>
+    <label for="user_comment">Comentario</label>
+    <br />
+    <textarea rows="3"></textarea>
+    <br />
+    <label for="rating">Puntaje del 1-5:</label>
+    <select name="rating" id="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select>
+  </fieldset>
   <button type="submit">Enviar</button>
 </form>

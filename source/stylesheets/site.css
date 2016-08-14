@@ -5,10 +5,20 @@
     padding: 0px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #333;
+    line-height: 1.2em;
 }
 
 body {
   background-image: url("/images/noise.png");
+}
+
+hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 89, 159, 1), rgba(0, 0, 0, 0));
+  height: 1px;
+  border: 0;
+}
+hr.clear-fix {
+  margin-bottom: 30px;
 }
 
 .clear-fix {
@@ -20,11 +30,22 @@ body {
   width: 940px; /* 960 */
   min-height: 100vh;
   margin: 0px auto;
-  padding: 10px;
+  border-top: 5px solid #00599f;
+  border-bottom: 5px solid #00599f;
+  padding: 10px 10px 0px 10px;
 
   box-shadow: 10px 10px 80px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 80px -1px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 80px -1px rgba(0,0,0,0.75);
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+figure {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 figure figcaption {
@@ -52,6 +73,7 @@ nav ul {
 }
 nav ul li {
   width: 124px;
+  margin-left: 0px;
   display: inline-block;
 }
 nav ul li a, nav ul li a:link {
@@ -95,6 +117,15 @@ section {
 section#banner, section.content {
   width: 920px;
 }
+article {
+  margin-bottom: 40px;
+}
+article p {
+  text-indent: 1em;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
 article figure img {
   width: 100%;
 }

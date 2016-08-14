@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+body {
+  background-color: black;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+#contenedor {
+  background-color: white;
+  width: 940px; /* 960 */
+  margin: 0px auto;
+  padding: 10px;
+}
+
+header {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 10px;
+  float: left;
+}
+header img {
+  height: 100px;
+}
+
+nav {
+  width: 640px;
+  margin-bottom: 10px;
+  float: right;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  width: 124px;
+  display: inline-block;
+}
+nav ul li a, nav ul li a:link {
+  color: #00599f;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  line-height: 100px;
+}
+nav ul li a:visited {
+  color: #00599f;
+}
+nav ul li a:hover {
+  color: #6b9cc4;
+}
+nav ul li a:focus {
+  color: #aaa;
+}
+
+h1, h2, h3 {
+  color: #00599f;
+  margin-bottom: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2em;
+}
+
+
+section {
+  padding:10px;
+  margin-bottom: 10px;
+
+  float: left;
+}
+section#banner, section.content {
+  width: 920px;
+}
+article figure img {
+  width: 100%;
+}
+
+section#clubs, section#news {
+  width: 600px;
+}
+
+aside {
+  width: 300%;
+  padding: 2%;
+  width: 30%;
+  background-color: #6CF;
+  float: right;
+  margin-bottom: 10px;
+}
+
+h1.slogan {
+  margin-bottom: -10px;
+}
+p.slogan {
+  margin-bottom: 20px;
+}
+.slogan {
+  text-align: center;
+}
+.banner {
+  width: 100%;
+}
+
+footer {
+  color: #999;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}

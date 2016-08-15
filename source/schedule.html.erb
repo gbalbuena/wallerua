@@ -8,10 +8,12 @@ title: Horarios
   <table border="1">
     <caption>Lunes, Miércoles y Viernes</caption>
     <thead>
-      <th>Hora</th>
-      <th>Actividad</th>
-      <th>Espacio</th>
-      <th>Profesor</th>
+      <tr>
+        <th>Hora</th>
+        <th>Actividad</th>
+        <th>Espacio</th>
+        <th>Profesor</th>
+      </tr>
     </thead>
     <tbody>
       <% csv_data('lunes_miercoles_viernes.csv').each do |row| %>
@@ -28,10 +30,12 @@ title: Horarios
   <table border="1">
     <caption>Martes y Jueves</caption>
     <thead>
-      <th>Hora</th>
-      <th>Actividad</th>
-      <th>Espacio</th>
-      <th>Profesor</th>
+      <tr>
+        <th>Hora</th>
+        <th>Actividad</th>
+        <th>Espacio</th>
+        <th>Profesor</th>
+      </tr>
     </thead>
     <tbody>
       <% csv_data('martes_jueves.csv').each do |row| %>
@@ -48,10 +52,12 @@ title: Horarios
   <table border="1">
     <caption>Sábado</caption>
     <thead>
-      <th>Hora</th>
-      <th>Actividad</th>
-      <th>Espacio</th>
-      <th>Profesor</th>
+      <tr>
+        <th>Hora</th>
+        <th>Actividad</th>
+        <th>Espacio</th>
+        <th>Profesor</th>
+      </tr>
     </thead>
     <tbody>
       <% csv_data('sabado.csv').each do |row| %>
@@ -68,10 +74,12 @@ title: Horarios
   <table border="1">
     <caption>Domingo</caption>
     <thead>
-      <th>Hora</th>
-      <th>Actividad</th>
-      <th>Espacio</th>
-      <th>Profesor</th>
+      <tr>
+        <th>Hora</th>
+        <th>Actividad</th>
+        <th>Espacio</th>
+        <th>Profesor</th>
+      </tr>
     </thead>
     <tbody>
       <% csv_data('domingo.csv').each do |row| %>

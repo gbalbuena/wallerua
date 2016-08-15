@@ -25,9 +25,9 @@ hr.clear-fix {
     clear: both;
 }
 
-#contenedor {
+#container {
   background-color: white;
-  width: 940px; /* 960 */
+  width: 940px;
   min-height: 100vh;
   margin: 0px auto;
   border-top: 5px solid #00599f;

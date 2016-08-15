@@ -84,6 +84,14 @@ nav ul li a, nav ul li a:link {
   display: block;
   line-height: 100px;
 }
+nav ul li a.activo {
+  color: #fff;
+  background-color: #00599f;
+}
+nav ul li a:visited.activo {
+  color: #fff;
+}
+
 nav ul li a:visited {
   color: #00599f;
 }

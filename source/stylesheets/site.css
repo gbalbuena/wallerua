@@ -220,3 +220,27 @@ footer {
   text-align: center;
   margin-bottom: 10px;
 }
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+.form-input textarea {
+  width: 100%;
+  display: block;
+}
+
+form * {
+  font-size: 1em;
+}
+
+form button {
+  background-color: #00599f;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+}

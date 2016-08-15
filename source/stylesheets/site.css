@@ -208,3 +208,16 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+#contacts li {
+  list-style: none;
+  list-style-image: none;
+}
+
+#contacts > li {
+  width: 240px;
+  float: left;
+  text-align: center;
+  margin-right: 60px;
+  margin-bottom: 10px;
+}
